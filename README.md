@@ -1,39 +1,3 @@
-<div align="center">
-
-![.NET MAUI](https://img.shields.io/badge/.NET%20MAUI-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
-![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
-![Clean Architecture](https://img.shields.io/badge/Architecture-MVVM%20%7C%20Clean-success?style=for-the-badge)
-
-![SQL Server](https://img.shields.io/badge/SQL%20Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
-
-![Gemini AI](https://img.shields.io/badge/Gemini%20AI-4285F4?style=for-the-badge&logo=google-gemini&logoColor=white)
-![Ollama](https://img.shields.io/badge/Ollama-Local%20AI-000000?style=for-the-badge&logo=ollama&logoColor=white)
-![AI Analysis](https://img.shields.io/badge/AI%20Analysis-8A2BE2?style=for-the-badge)
-
-![Performance](https://img.shields.io/badge/Performance%20Tuning-FF8C00?style=for-the-badge)
-![Security](https://img.shields.io/badge/Security%20Audit-DC143C?style=for-the-badge)
-
-![QuestPDF](https://img.shields.io/badge/Reporting-QuestPDF-0078D4?style=for-the-badge)
-![Mermaid.js](https://img.shields.io/badge/Visualization-Mermaid.js-FF3670?style=for-the-badge)
-
-# AI Database Analyzer & Architect
-
-*An autonomous, AI-driven Senior Database Consultant in your pocket.*
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/furkiak/AIDatabaseAnalyzer/refs/heads/main/SSD.png" width="600" title="ActiveRest Dashboard">
-</p>
-
- 
-
-</div>
-
----
-
-# 🇺🇸 English Version
-
 ## The Vision
 In the modern era of software engineering, database schemas often become "black boxes" accumulating technical debt, hidden bottlenecks, and security vulnerabilities. **AI Database Analyzer** is an enterprise-grade architectural intelligence tool designed to bridge the gap between raw database schemas and actionable expert insights. 
 
