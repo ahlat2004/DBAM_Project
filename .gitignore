@@ -1,0 +1,53 @@
+# Flutter specific
+flutter_app/build/
+flutter_app/.dart_tool/
+flutter_app/.packages
+flutter_app/pubspec.lock
+flutter_app/.flutter-plugins-dependencies
+flutter_app/.idea/
+
+# MAUI Build outputs
+AIDatabaseAnalyzer/bin/
+AIDatabaseAnalyzer/obj/
+AIDatabaseAnalyzer/.vs/
+AIDatabaseAnalyzer/Properties/launchSettings.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+.DS_Store?
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# Local environment
+*.env
+.env.local
+
+# Logs
+*.log
+
+# Cache
+.cache/
+*.cache
+
+# Dependencies
+node_modules/
+gem.lock
+
+# Build artifacts
+dist/
+build/
+*.o
+*.so

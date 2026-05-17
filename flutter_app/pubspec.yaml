@@ -1,0 +1,47 @@
+name: ai_database_analyzer
+description: AI-powered SQL Server database administration analyzer. Extracts schema metadata and runs AI-driven DBA audits via Gemini or Ollama.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management
+  provider: ^6.1.2
+
+  # HTTP client (Gemini + Ollama)
+  http: ^1.2.2
+
+  # Database driver (SQL Server only)
+  mssql_connection: ^3.0.0
+
+  # Settings persistence
+  shared_preferences: ^2.3.2
+
+  # PDF generation
+  pdf: ^3.11.0
+  printing: ^5.13.2
+
+  # File system
+  path_provider: ^2.1.4
+  file_selector: ^1.0.3
+
+  # Fonts & Icons
+  google_fonts: ^6.2.1
+  cupertino_icons: ^1.0.8
+
+  # Webview for Mermaid ER diagrams
+  webview_flutter: ^4.10.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/mermaid_viewer.html
+dev_dependencies:
+  lints: ^6.1.0
+  flutter_test:
+    sdk: flutter

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ER Diagram</title>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/svg-pan-zoom@3.6.1/dist/svg-pan-zoom.min.js"></script>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { background:#0F172A; color:#CBD5E1; font-family:system-ui,sans-serif; height:100vh; overflow:hidden; display:flex; flex-direction:column; }
+    #toolbar { display:flex; align-items:center; gap:12px; padding:10px 16px; background:#1E293B; border-bottom:1px solid #334155; flex-shrink:0; }
+    #toolbar h3 { color:#60A5FA; font-size:14px; font-weight:700; flex:1; }
+    .btn { background:#2563EB; color:#fff; border:none; border-radius:6px; padding:6px 14px; font-size:12px; cursor:pointer; font-weight:600; }
+    .btn:hover { background:#1D4ED8; }
+    .btn.secondary { background:#334155; }
+    .btn.secondary:hover { background:#475569; }
+    #diagram-wrapper { flex:1; overflow:hidden; position:relative; }
+    #diagram { width:100%; height:100%; }
+    .mermaid svg { max-width:none !important; }
+    #hint { position:absolute; bottom:12px; right:16px; font-size:11px; color:#475569; }
+  </style>
+</head>
+<body>
+  <div id="toolbar">
+    <h3>🔗 ER Diagram</h3>
+    <button class="btn secondary" onclick="panZoom && panZoom.reset()">Reset View</button>
+    <button class="btn secondary" onclick="panZoom && panZoom.zoomIn()">＋ Zoom In</button>
+    <button class="btn secondary" onclick="panZoom && panZoom.zoomOut()">－ Zoom Out</button>
+  </div>
+  <div id="diagram-wrapper">
+    <div id="diagram" class="mermaid">__MERMAID_CODE__</div>
+    <div id="hint">Scroll to zoom • Drag to pan</div>
+  </div>
+  <script>
+    mermaid.initialize({ startOnLoad: true, theme: 'dark', securityLevel: 'loose',
+      er: { diagramPadding: 30, layoutDirection: 'TB', minEntityWidth: 100, useMaxWidth: false } });
+    let panZoom;
+    document.addEventListener('DOMContentLoaded', () => {
+      setTimeout(() => {
+        const svg = document.querySelector('#diagram svg');
+        if (svg) {
+          svg.setAttribute('width','100%');
+          svg.setAttribute('height','100%');
+          panZoom = svgPanZoom(svg, { zoomEnabled:true, controlIconsEnabled:false, fit:true, center:true, minZoom:0.1, maxZoom:10 });
+        }
+      }, 600);
+    });
+  </script>
+</body>
+</html>
